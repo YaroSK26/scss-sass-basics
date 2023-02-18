@@ -1,0 +1,48 @@
+@mixin rounded( $border, $radius: 15px, ) {
+    border-radius: $radius;
+    border: $border;
+}
+
+
+
+@mixin myButton {
+    @include rounded(20px,20%);
+    background: $modra;
+    color: white;
+}
+
+@mixin textStyle {
+    font: { 
+    family: Arial, Helvetica, sans-serif;
+    size: 30px;
+    }
+}
+
+@mixin links {
+ a {
+    font-style: italic;
+    color: $modra;
+    text-decoration: none;
+}
+
+}
+
+@mixin image {
+    width: 300px;
+}
+
+@mixin shadow($shadow...){
+ box-shadow: $shadow;
+
+}
+
+@mixin pizza {
+    @if $brand == pizza {
+        @content;  
+    }
+}
+
+@mixin coffee {
+    @if $brand == coffee{
+    @content;}
+}

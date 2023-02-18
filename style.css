@@ -1,0 +1,213 @@
+a {
+  font-style: italic;
+  color: blue;
+  text-decoration: none;
+}
+
+img {
+  width: 300px;
+  border-radius: 20%;
+  border: 2px solid red;
+  box-shadow: 5px 5px 10px green, 10px 10px 10px blue;
+}
+
+h1 {
+  color: blue;
+  text-decoration: underline;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+body {
+  font-size: 30px;
+  background: white;
+}
+
+h1, h2, p {
+  color: black;
+}
+
+.alert {
+  border-radius: 20%;
+  border: 20px;
+  background: blue;
+  color: white;
+  padding: 5px 10px;
+}
+
+.big {
+  border-radius: 20%;
+  border: 20px;
+  background: blue;
+  color: white;
+  padding: 0.625em 0.9375em; /*em prepocitava*/
+  font-size: 1em;
+}
+
+.first-list ul {
+  font-size: 23px;
+}
+.first-list ul li {
+  color: blue;
+}
+
+a {
+  color: aqua;
+  border-bottom: 2px solid rgba(255, 165, 0, 0.2); /*priehladnost*/
+}
+a:hover {
+  color: #0000cc; /*lighten*/
+}
+
+.normal-notification, .error-notification {
+  color: white;
+  background: red;
+  font-size: 20px;
+  width: 220px;
+  text-align: center;
+}
+
+.error-notification {
+  border: 5px solid blue;
+}
+
+.result {
+  color: #123456;
+}
+
+.col-1 {
+  width: 5em;
+}
+
+.col-2 {
+  width: 10em;
+}
+
+.col-3 {
+  width: 15em;
+}
+
+.col-4 {
+  width: 20em;
+}
+
+.col-5 {
+  width: 25em;
+}
+
+.col-6 {
+  width: 30em;
+}
+
+.one-student-profile {
+  background-image: url("img/david.png");
+}
+
+.one-student-profile {
+  background-image: url("img/harry.png");
+}
+
+.one-student-profile {
+  background-image: url("img/madar.png");
+}
+
+.very-small {
+  font-size: 7px;
+}
+
+.small {
+  font-size: 10px;
+}
+
+.medium {
+  font-size: 15px;
+}
+
+.picture-1 {
+  width: 10%;
+}
+
+.picture-2 {
+  width: 20%;
+}
+
+.picture-3 {
+  width: 30%;
+}
+
+.picture-4 {
+  width: 40%;
+}
+
+.picture-8 {
+  width: 80%;
+}
+
+.picture-7 {
+  width: 70%;
+}
+
+.picture-6 {
+  width: 60%;
+}
+
+.picture-5 {
+  width: 50%;
+}
+
+.picture-4 {
+  width: 40%;
+}
+
+.picture-3 {
+  width: 30%;
+}
+
+.picture-2 {
+  width: 20%;
+}
+
+.picture-1 {
+  width: 10%;
+}
+
+/*
+@media only screen {
+    .test-class {
+        color: blue;
+    }
+
+    .another-class{
+        @extend .test-class;
+        font-size: 30px;
+    }
+}
+ @extend nejde ked neni v media query 
+
+-------
+
+ %test-class2 {
+   font-style: italic;
+ }
+
+.sub-title {
+    @extend %test-class2;
+    font-size: 28px;
+}
+
+% miesto . sa neukaze v style.css
+
+-------
+
+.new-class{
+    @extend dont-exists !optional;
+    font-size: 45px;
+}
+
+nepouzije classu ked ju netreba
+
+
+*//*# sourceMappingURL=style.css.map */

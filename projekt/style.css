@@ -1,0 +1,55 @@
+body {
+  background-color: white;
+  width: 1200px;
+  margin: 0px auto;
+}
+
+header {
+  height: 50px;
+  background: rgb(75, 15, 60);
+  color: white;
+  text-align: center;
+}
+header h1 {
+  margin-top: 0px;
+  line-height: 50px;
+}
+
+.about-us h2, .about-us p {
+  color: black;
+}
+
+.theme {
+  width: 49.45%;
+  display: inline-block;
+}
+.theme a {
+  display: block;
+  text-align: center;
+  width: 100px;
+  margin: 10px auto;
+  text-decoration: none;
+  background: rgb(75, 15, 60);
+  color: white;
+  padding: 10px 15px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+.theme a:hover {
+  background-color: #76185e;
+}
+
+img {
+  width: 70%;
+  display: block;
+  margin: 0px auto;
+  border-radius: 15px;
+}
+
+footer {
+  height: 50px;
+  background: rgb(75, 15, 60);
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}/*# sourceMappingURL=style.css.map */

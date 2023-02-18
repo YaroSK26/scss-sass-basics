@@ -1,0 +1,176 @@
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/functions";
+@include links;
+
+img{ 
+@include image;
+@include rounded(2px  solid red,20%);
+@include shadow(5px 5px 10px green , 10px 10px 10px blue);
+}
+
+
+h1 { color: $modra;
+ @include pizza {
+    text-decoration: underline
+ }
+}
+
+p {
+     @include textStyle;
+     @include coffee {
+        border: 1px solid brown;
+     }
+}
+
+$font-size: big;
+
+
+body {
+    @if $font-size  == small{
+        font-size: 10px;
+    } @else if $font-size == normal {
+        font-size: 20px;
+    } @else {
+        font-size: 30px;
+    }
+    background: $background;
+}
+h1,h2, p {
+    color: $text-color;
+}
+
+.alert {
+    @include myButton;
+    padding: 5px 10px;
+}
+
+.big {
+    @include myButton;
+    padding:  em(10px) em(15px);/*em prepocitava*/
+    font-size: 1em;
+}
+
+
+.first-list ul{
+    font-size: 23px;
+
+    li{color: blue;}
+
+   
+}
+
+a{
+  color: aqua;
+  border-bottom: 2px solid transparentize(orange, 0.8); /*priehladnost*/
+    &:hover {
+            color: darken(blue , 10%);/*lighten*/
+        }
+}
+
+
+
+.normal-notification
+{
+    color: white;
+    background: red;
+    font-size: 20px;
+    width: 220px;
+    text-align: center;
+}
+
+.error-notification{
+    @extend .normal-notification;
+    border: 5px solid  blue;
+}
+
+
+.result {
+  color: $math-results;
+}
+
+
+//cyklusy
+//for
+@for $i from 1 through 6 {
+    .col-#{$i} {
+
+        width: $i * 5em;
+
+    }
+}
+//each a list
+$students: david, harry, madar;
+
+@each $one-student in $students{
+ .#{one-student}-profile {
+    background-image: url("img/#{$one-student}.png");
+ }
+}
+//map 
+$styl: ( very-small: 7px, small: 10px, medium: 15px );
+
+@each $name, $size in $styl {
+    .#{$name} {
+        font-size: $size;
+    }
+}
+
+//cyklus whiile
+$j: 1;
+@while $j <= 4  {
+    .picture-#{$j}{
+        width: $j * 10%;
+
+    }
+    $j: $j + 1;
+}
+
+$K: 8;
+@while $K >= 1 {
+    .picture-#{$K}{
+      width: $K *10%;
+    }
+    $K: $K - 1;
+}
+
+
+/*
+@media only screen {
+    .test-class {
+        color: blue;
+    }
+
+    .another-class{
+        @extend .test-class;
+        font-size: 30px;
+    }
+}
+ @extend nejde ked neni v media query 
+
+-------
+
+ %test-class2 {
+   font-style: italic;
+ }
+
+.sub-title {
+    @extend %test-class2;
+    font-size: 28px;
+}
+
+% miesto . sa neukaze v style.css
+
+-------
+
+.new-class{
+    @extend dont-exists !optional;
+    font-size: 45px;
+}
+
+nepouzije classu ked ju netreba
+
+
+*/
+
+

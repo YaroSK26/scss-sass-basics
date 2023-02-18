@@ -1,0 +1,30 @@
+//colors
+$body-bg: white  ;
+$header-footer-bg:  rgb( 75, 15,60) ;
+$header-footer-text: white;
+$text-color:black;
+$button-border: 2px solid black;
+
+//sizes
+$header-height:50px ;
+$footer-height:  50px ;
+
+//theme light, dark
+$theme: light;
+
+@if $theme == dark {
+    $body-bg: black;
+    $text-color: white;
+    $button-border: 2px solid white;
+} @else {
+    $body-bg: white;
+        $header-footer-bg: rgb(75, 15, 60);
+        $header-footer-text: white;
+        $text-color: black;
+        $button-border: 2px solid black;
+    
+        //sizes
+        $header-height: 50px;
+        $footer-height: 50px;
+}
+

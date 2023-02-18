@@ -1,0 +1,17 @@
+$modra: blue;
+$font: 30px;
+$background: white  ;
+$theme: dark;
+$text-color: black;
+$brand : pizza;
+$math-results:  #123456;
+
+
+@if $theme == dar {
+     $background:black ;
+     $text-color: white;
+} @else {
+    $background: white  ;
+    $text-color: black;
+}
+
